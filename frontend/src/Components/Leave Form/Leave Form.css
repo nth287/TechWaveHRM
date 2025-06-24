@@ -1,0 +1,134 @@
+/* LeaveForm.css */
+
+.leave-form-container {
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-x: auto;
+}
+
+.search-input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+.leave-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin: 24px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.leave-table th {
+    background: #2196f3;
+    color: #fff;
+    font-size: 1.05rem;
+    padding: 14px 0;
+    font-weight: 700;
+    border-bottom: 2px solid #1976d2;
+}
+
+.leave-table td {
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 0.98rem;
+    color: #2d3748;
+    background: #fff;
+    border-bottom: 1px solid #e3eaf1;
+}
+
+.leave-table tr:nth-child(even) td {
+    background: #f6f8fa;
+}
+
+.leave-table tr:hover td {
+    background: #e9eef6;
+    transition: background 0.2s;
+}
+
+@media (max-width: 900px) {
+    .leave-table, .leave-table th, .leave-table td {
+        font-size: 0.95rem;
+    }
+    .leave-table th, .leave-table td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leave-table, .leave-table thead, .leave-table tbody, .leave-table th, .leave-table td, .leave-table tr {
+        display: block;
+    }
+    .leave-table thead {
+        display: none;
+    }
+    .leave-table td {
+        padding: 8px 2px;
+        text-align: left;
+        border-bottom: 1px solid #e3eaf1;
+    }
+    .leave-table tr {
+        margin-bottom: 10px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    min-width: 80px !important;
+    width: 80px !important;
+    text-align: center;
+    font-weight: 500;
+    height: 36px !important;
+    line-height: 36px !important;
+}
+
+.update-btn {
+    background-color: #43a047;
+    color: white;
+    width: 50px !important;
+
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    width: 100px !important;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c !important;
+    color: #fff;
+    opacity: 1;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,144 @@
+/* Removed invalid Google Fonts import for Segoe UI */
+
+.modern-nav {
+  width: 100%;
+  background: linear-gradient(90deg, #2196f3 0%, #6a82fb 100%);
+  box-shadow: 0 2px 12px rgba(33, 150, 243, 0.10);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.modern-nav__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 60px;
+}
+
+.modern-nav__logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.modern-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modern-nav__item {
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0 2px;
+}
+
+.modern-nav__link {
+  display: block;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 22px;
+  border-radius: 0;
+  background: none !important;
+  box-shadow: none !important;
+  transition: background 0.18s, color 0.18s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.modern-nav__link:hover, .modern-nav__link:focus {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
+.modern-nav__link.active {
+  background: none !important;
+  color: #111 !important;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+}
+
+/* Hamburger menu styles */
+.modern-nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+.modern-nav__hamburger {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  position: relative;
+}
+.modern-nav__hamburger::before,
+.modern-nav__hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: 0.2s;
+}
+.modern-nav__hamburger::before {
+  top: -8px;
+}
+.modern-nav__hamburger::after {
+  top: 8px;
+}
+
+@media (max-width: 800px) {
+  .modern-nav__container {
+    padding: 0 10px;
+  }
+  .modern-nav__logo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .modern-nav__links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #2196f3 0%, #6a82fb 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0;
+    display: none;
+  }
+  .modern-nav__links.open {
+    display: flex;
+  }
+  .modern-nav__item {
+    width: 100%;
+    margin: 0;
+  }
+  .modern-nav__link {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 0;
+  }
+  .modern-nav__toggle {
+    display: block;
+  }
+}
+
+.manager-container button.approve { background-color: #43a047 !important; color: #fff !important; }
+.manager-container button.reject { background-color: #ff9800 !important; color: #fff !important; } 

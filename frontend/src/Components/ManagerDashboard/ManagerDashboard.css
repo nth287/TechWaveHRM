@@ -1,0 +1,166 @@
+/* Approve Button */
+.button-approve {
+    background: linear-gradient(90deg, #4CAF50 0%, #43a047 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin: 0 4px;
+    font-size: 1rem;
+}
+.button-approve:hover {
+    background: linear-gradient(90deg, #388e3c 0%, #43a047 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+/* Reject Button */
+.button-reject {
+    background: linear-gradient(90deg, #f44336 0%, #dc3545 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin: 0 4px;
+    font-size: 1rem;
+}
+.button-reject:hover {
+    background: linear-gradient(90deg, #b71c1c 0%, #dc3545 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.manager-container table {
+    width: 100%;
+    max-width: 1400px;
+    margin: 32px auto 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(33, 150, 243, 0.10);
+    font-size: 1.08rem;
+    overflow: hidden;
+}
+
+.manager-container th, .manager-container td {
+    padding: 16px 12px;
+    text-align: center;
+    color: #2d3748;
+}
+
+.manager-container thead th {
+    background: linear-gradient(90deg, #0086f4 0%, #0086f4 100%);
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 700;
+    border-bottom: 2px solid #0086f4;
+    letter-spacing: 0.3px;
+}
+
+.manager-container tbody tr:nth-child(even) td {
+    background: #f6f8fa;
+}
+
+.manager-container tbody tr:hover td {
+    background: #e3f0fd;
+    transition: background 0.2s;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    margin: 0;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 16px 10px 40px; /* left padding for icon */
+    border: 1.5px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s;
+    outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+    border: 1.5px solid #0086f4;
+    background: #fff;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #0086f4;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.download-report {
+    background: linear-gradient(90deg, #47a04b 0%, #47a04b 100%);
+    color: #fff;
+    padding: 12px 32px;
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 0;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 0.2px;
+    display: inline-block;
+}
+.download-report:hover {
+    background: linear-gradient(90deg, #686968 0%, #686968 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.download-report-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 12px;
+    margin-right: 0;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 24px auto;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 320px;
+    margin: 0;
+}
+
+.download-report-container {
+    margin-left: 0;
+}
+
+h1 {
+    text-align: center;
+}
